@@ -101,8 +101,8 @@ int main( void )
 	glBindVertexArray(VertexArrayID);
 
 	// Create and compile our GLSL program from the shaders
-    GLuint programID = LoadShaders("/Users/david/Documents/cpp/graphicslabs/A3/Lighting_Framework/Xcode/Shaders/Phong.vertexshader","/Users/david/Documents/cpp/graphicslabs/A3/Lighting_Framework/Xcode/Shaders/Phong.fragmentshader");
-//	GLuint programID = LoadShaders("/Users/david/Documents/cpp/graphicslabs/A3/Lighting_Framework/Xcode/Shaders/Gouraud.vertexshader","/Users/david/Documents/cpp/graphicslabs/A3/Lighting_Framework/Xcode/Shaders/Gouraud.fragmentshader");
+  //  GLuint programID = LoadShaders("/Users/david/Documents/cpp/graphicslabs/A3/Lighting_Framework/Xcode/Shaders/Phong.vertexshader","/Users/david/Documents/cpp/graphicslabs/A3/Lighting_Framework/Xcode/Shaders/Phong.fragmentshader");
+    GLuint programID = LoadShaders("/Users/david/Documents/cpp/graphicslabs/A3/Lighting_Framework/Xcode/Shaders/Gouraud.vertexshader","/Users/david/Documents/cpp/graphicslabs/A3/Lighting_Framework/Xcode/Shaders/Gouraud.fragmentshader");
 
 
 	// Get a handle for our Transformation Matrices uniform
