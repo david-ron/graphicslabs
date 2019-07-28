@@ -41,7 +41,9 @@ void main()
     vec3 LightPosition_cameraspace = ( ViewTransform * WorldLightPosition).xyz;
     lightVector = vec4(LightPosition_cameraspace + eyeVector, dir);
     normal = ( MV * vec4(vertexNormal_modelspace,0)).xyz;
-
+    mat4 Winvt = transpose(inverse(WorldTransform));
+    
+    normal = (ViewTransform * Winvt * vec4(vertexNormal_modelspace,0)).xyz;
     // Prepare Data for Fragment Shader
 	// Should the normal be transformed?
 	// eyeVector = ...

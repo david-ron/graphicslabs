@@ -30,8 +30,8 @@ using namespace glm;
 
 // Material Coefficients
 const float ka = 0.2f;
-const float kd = 0.8f;
-const float ks = 0.2f;
+const float kd = 0.5f;
+const float ks = 0.5f;
 const float n = 50.0f;
 
 // Light Coefficients
@@ -39,7 +39,7 @@ const vec3 lightColor(1.0f, 1.0f, 1.0f);
 const float lightKc = 0.0f;
 const float lightKl = 0.0f;
 const float lightKq = 1.0f;
-const vec4 lightPosition(-3.0f, 5.0f, -5.0f, 1.0f); // If w = 1.0f, we have a point light
+const vec4 lightPosition(5.0f, 5.0f, -8.0f, 1.0f); // If w = 1.0f, we have a point light
 //const vec4 lightPosition(5.0f, -5.0f, 5.0f, 0.0f); // If w = 0.0f, we have a directional light
 
 
