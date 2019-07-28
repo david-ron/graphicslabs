@@ -14,7 +14,8 @@
 		038B791E1A6FF3EB00111E36 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 038B791D1A6FF3EB00111E36 /* IOKit.framework */; };
 		03CF97D11B56DF9A00F60482 /* libfreeimage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03CF97D01B56DF9A00F60482 /* libfreeimage.a */; };
 		03DA72D222B02FC5009C7A21 /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DA72D122B02FC5009C7A21 /* libGLEW.a */; };
-		63100D0F22D57343007A94E3 /* lab04.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 63100D0E22D57343007A94E3 /* lab04.cpp */; };
+		63FC8B3F22DEA9A00008B7A4 /* BSplineCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 63FC8B3B22DEA99F0008B7A4 /* BSplineCamera.cpp */; };
+		63FC8B4022DEA9A00008B7A4 /* World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 63FC8B3C22DEA9A00008B7A4 /* World.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,13 +40,16 @@
 		038B791D1A6FF3EB00111E36 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		03CF97D01B56DF9A00F60482 /* libfreeimage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreeimage.a; path = "../ThirdParty/FreeImage-3170/lib/osx/libfreeimage.a"; sourceTree = "<group>"; };
 		03DA72D122B02FC5009C7A21 /* libGLEW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLEW.a; path = "../ThirdParty/glew-2.1.0/lib/osx/libGLEW.a"; sourceTree = "<group>"; };
-		63100D0E22D57343007A94E3 /* lab04.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = lab04.cpp; path = ../../../Lab04/lab04.cpp; sourceTree = "<group>"; };
 		63100D1022D57390007A94E3 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Assets; path = ../../../Lab04/Assets; sourceTree = "<group>"; };
 		63100D1122D573AD007A94E3 /* Textures */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Textures; path = ../../../Lab04/Assets/Textures; sourceTree = "<group>"; };
 		63100D1322D573BC007A94E3 /* cement.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cement.jpg; sourceTree = "<group>"; };
 		63100D1422D573BC007A94E3 /* brick.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = brick.jpg; sourceTree = "<group>"; };
 		63100D1522D5741E007A94E3 /* Bin */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Bin; path = ../../../Lab04/Bin; sourceTree = "<group>"; };
 		63100D1722D57436007A94E3 /* FreeImage.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = FreeImage.dll; sourceTree = "<group>"; };
+		63FC8B3B22DEA99F0008B7A4 /* BSplineCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BSplineCamera.cpp; sourceTree = "<group>"; };
+		63FC8B3C22DEA9A00008B7A4 /* World.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = World.cpp; sourceTree = "<group>"; };
+		63FC8B3D22DEA9A00008B7A4 /* World.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = World.h; sourceTree = "<group>"; };
+		63FC8B3E22DEA9A00008B7A4 /* BSplineCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSplineCamera.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +118,10 @@
 		038B785E1A6EB3F500111E36 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				63100D0E22D57343007A94E3 /* lab04.cpp */,
+				63FC8B3B22DEA99F0008B7A4 /* BSplineCamera.cpp */,
+				63FC8B3E22DEA9A00008B7A4 /* BSplineCamera.h */,
+				63FC8B3C22DEA9A00008B7A4 /* World.cpp */,
+				63FC8B3D22DEA9A00008B7A4 /* World.h */,
 			);
 			name = Source;
 			path = ../Source;
@@ -194,7 +201,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63100D0F22D57343007A94E3 /* lab04.cpp in Sources */,
+				63FC8B3F22DEA9A00008B7A4 /* BSplineCamera.cpp in Sources */,
+				63FC8B4022DEA9A00008B7A4 /* World.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

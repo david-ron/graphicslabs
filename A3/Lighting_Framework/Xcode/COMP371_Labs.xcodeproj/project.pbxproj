@@ -53,6 +53,8 @@
 		63FD9E5722EBCCF0006FAD6A /* Shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Shaders; sourceTree = "<group>"; };
 		63FD9E5822EBCCF0006FAD6A /* sphere.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sphere.cpp; sourceTree = "<group>"; };
 		63FD9E5922EBCCF0006FAD6A /* sphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sphere.h; sourceTree = "<group>"; };
+		63FD9E6022EBE8F7006FAD6A /* File.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = File.txt; sourceTree = "<group>"; };
+		63FD9E6122ED2042006FAD6A /* vertexold.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = vertexold.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,8 +127,10 @@
 				63FD9E5522EBCCF0006FAD6A /* main.cpp */,
 				63FD9E5422EBCCF0006FAD6A /* shader.cpp */,
 				63FD9E5622EBCCF0006FAD6A /* shader.h */,
+				63FD9E6122ED2042006FAD6A /* vertexold.txt */,
 				63FD9E5822EBCCF0006FAD6A /* sphere.cpp */,
 				63FD9E5922EBCCF0006FAD6A /* sphere.h */,
+				63FD9E6022EBE8F7006FAD6A /* File.txt */,
 			);
 			name = Source;
 			path = ../Source;

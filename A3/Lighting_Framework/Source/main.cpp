@@ -28,7 +28,6 @@ using namespace glm;
 #include "shader.h"
 #include "sphere.h"
 
-
 // Material Coefficients
 const float ka = 0.2f;
 const float kd = 0.8f;
@@ -40,8 +39,8 @@ const vec3 lightColor(1.0f, 1.0f, 1.0f);
 const float lightKc = 0.0f;
 const float lightKl = 0.0f;
 const float lightKq = 1.0f;
-const vec4 lightPosition(5.0f, 5.0f, -5.0f, 1.0f); // If w = 1.0f, we have a point light
-//const vec4 lightPosition(5.0f, -5.0f, 5.0f, 0.0f); // If w = 0.0f, we have a directional light
+//const vec4 lightPosition(5.0f, 5.0f, -5.0f, 1.0f); // If w = 1.0f, we have a point light
+const vec4 lightPosition(5.0f, -5.0f, 5.0f, 0.0f); // If w = 0.0f, we have a directional light
 
 
 int main( void )
@@ -102,8 +101,8 @@ int main( void )
 	glBindVertexArray(VertexArrayID);
 
 	// Create and compile our GLSL program from the shaders
-	GLuint programID = LoadShaders("/Users/david/Documents/cpp/graphicslabs/A3/Lighting_Framework/Xcode/Shaders/Phong.fragmentshader");
-//	GLuint programID = LoadShaders("../Source/Shaders/Gouraud.vertexshader", "../Source/Shaders/Gouraud.fragmentshader");
+    GLuint programID = LoadShaders("/Users/david/Documents/cpp/graphicslabs/A3/Lighting_Framework/Xcode/Shaders/Phong.vertexshader","/Users/david/Documents/cpp/graphicslabs/A3/Lighting_Framework/Xcode/Shaders/Phong.fragmentshader");
+//	GLuint programID = LoadShaders("/Users/david/Documents/cpp/graphicslabs/A3/Lighting_Framework/Xcode/Shaders/Gouraud.vertexshader","/Users/david/Documents/cpp/graphicslabs/A3/Lighting_Framework/Xcode/Shaders/Gouraud.fragmentshader");
 
 
 	// Get a handle for our Transformation Matrices uniform
