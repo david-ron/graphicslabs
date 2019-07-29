@@ -53,9 +53,11 @@ void main()
     vec3 specular = materialCoefficients.z * spec * lightColor;
 
     float attenuation = 1.0f / (lightAttenuation.x + lightAttenuation.y * distance + lightAttenuation.z * (distance * distance));
+    if(lightVector.w == 1){
     ambient  *= attenuation;
     diffuse  *= attenuation;
     specular *= attenuation;
+    }
     color = (ambient  + diffuse +specular ) * v_color;
 
 

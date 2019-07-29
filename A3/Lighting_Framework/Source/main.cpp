@@ -40,7 +40,7 @@ const float lightKc = 0.0f;
 const float lightKl = 0.0f;
 const float lightKq = 1.0f;
 const vec4 lightPosition(5.0f, 5.0f, -5.0f, 1.0f); // If w = 1.0f, we have a point light
-//const vec4 lightPosition(5.0f, -5.0f, 5.0f, 0.0f); // If w = 0.0f, we have a directional light
+//const vec4 lightPosition(5.0f, 5.0f, -5.0f, 0.0f); // If w = 0.0f, we have a directional light
 
 
 int main( void )
