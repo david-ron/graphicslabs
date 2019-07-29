@@ -39,7 +39,7 @@ void main()
     vec3 vertexPosition_cameraspace = ( MV * vec4(vertexPosition_modelspace,1)).xyz;
     eyeVector = vec3(0,0,0) - vertexPosition_cameraspace;
     vec3 LightPosition_cameraspace = ( ViewTransform * WorldLightPosition).xyz;
-    lightVector = vec4(LightPosition_cameraspace + eyeVector, dir);
+    lightVector = vec4(LightPosition_cameraspace - WorldLightPosition.xyz, dir);
     normal = ( MV * vec4(vertexNormal_modelspace,0)).xyz;
     mat4 Winvt = transpose(inverse(WorldTransform));
     

@@ -32,7 +32,7 @@ void main()
     vec3 norm = normalize(normal);
     vec3 eye_vector = normalize(eyeVector);
     // maintain 4th element incase
-    vec4 light_vector = vec4(normalize(lightVector.xyz),lightVector.w);
+    vec4 light_vector = vec4(normalize(lightVector.xyz), lightVector.w);
     // distance
     float distance = length(light_vector.xyz);
     // Ambient
