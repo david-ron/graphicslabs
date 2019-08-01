@@ -101,14 +101,14 @@ int main( void )
 	glBindVertexArray(VertexArrayID);
 
 	// Create and compile our GLSL program from the shaders
-    GLuint programID = LoadShaders("/Users/david/Documents/cpp/graphicslabs/A3/Lighting_Framework/Xcode/Shaders/Phong.vertexshader","/Users/david/Documents/cpp/graphicslabs/A3/Lighting_Framework/Xcode/Shaders/Phong.fragmentshader");
-//    GLuint programID = LoadShaders("/Users/david/Documents/cpp/graphicslabs/A3/Lighting_Framework/Xcode/Shaders/Gouraud.vertexshader","/Users/david/Documents/cpp/graphicslabs/A3/Lighting_Framework/Xcode/Shaders/Gouraud.fragmentshader");
+//    GLuint programID = LoadShaders("/Users/david/Documents/cpp/graphicslabs/A3/Lighting_Framework/Xcode/Shaders/Phong.vertexshader","/Users/david/Documents/cpp/graphicslabs/A3/Lighting_Framework/Xcode/Shaders/Phong.fragmentshader");
+    GLuint programID = LoadShaders("/Users/david/Documents/cpp/graphicslabs/A3/Lighting_Framework/Xcode/Shaders/Gouraud.vertexshader","/Users/david/Documents/cpp/graphicslabs/A3/Lighting_Framework/Xcode/Shaders/Gouraud.fragmentshader");
 
 
 	// Get a handle for our Transformation Matrices uniform
 	GLuint WorldMatrixID = glGetUniformLocation(programID, "WorldTransform");
 	GLuint ViewMatrixID = glGetUniformLocation(programID, "ViewTransform");
-	GLuint ProjMatrixID = glGetUniformLocation(programID, "ProjectonTransform");
+	GLuint ProjMatrixID = glGetUniformLocation(programID, "ProjectionTransform");
 
 	// Get a handle for Light Attributes uniform
 	GLuint LightPositionID = glGetUniformLocation(programID, "WorldLightPosition");
